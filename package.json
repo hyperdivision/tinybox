@@ -1,0 +1,22 @@
+{
+  "name": "tinystore",
+  "version": "0.0.0",
+  "description": "WIP - nothing to see here",
+  "main": "index.js",
+  "dependencies": {
+    "mutexify": "^1.2.0",
+    "thunky": "^1.0.3",
+    "varint": "^5.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/tinystore.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/tinystore/issues"
+  },
+  "homepage": "https://github.com/mafintosh/tinystore"
+}
