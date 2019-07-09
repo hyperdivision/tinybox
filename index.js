@@ -1,8 +1,6 @@
-const Trie = require('./lib/trie-compressor')
 const Storage = require('./lib/storage')
 const get = require('./lib/get')
 const put = require('./lib/put')
-const Node = require('./lib/node')
 const mutexify = require('mutexify')
 const thunky = require('thunky')
 
@@ -12,20 +10,6 @@ module.exports = class Tinystore {
     this.lock = mutexify()
     this.opened = false
     this.ready = thunky(open.bind(this))
-  }
-
-  head (cb) {
-    if (!this.data.head) return cb(null, null)
-    this.getNode(this.data.head, cb)
-  }
-
-  getNode (seq, cb) {
-    this.data.get(seq, function (err, data) {
-      if (err) return cb(err, null)
-      const node = new Node(data)
-      node.seq = seq
-      cb(null, node)
-    })
   }
 
   get (key, cb) {
