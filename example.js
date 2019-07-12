@@ -26,5 +26,5 @@ t.flush(function () {
 
 function print (err, node) {
   if (err) throw err
-  console.log(node.key.toString() + ' --> ' + (node.value ? node.value.length : 0) + ' bytes')
+  console.log(node.key.toString() + ' --> ' + (node.value ? node.value.length : 0) + ' bytes', node.seq)
 }
