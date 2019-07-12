@@ -1,9 +1,9 @@
-# tinystore
+# tinybox
 
 Tiny, single file, scalable key value store based on HAMTs
 
 ```
-npm install tinystore
+npm install tinybox
 ```
 
 Uses the [Hypertrie](https://github.com/mafintosh/hypertrie) trie without the replication parts,
@@ -15,9 +15,9 @@ deletions and getting all values out of the store.
 ## Usage
 
 ``` js
-const Tinystore = require('tinystore')
+const TinyBox = require('tinybox')
 
-const db = new Tinystore('./db')
+const db = new TinyBox('./db')
 
 db.put('hello', 'world', function () {
   db.get('hello', console.log)
@@ -26,7 +26,7 @@ db.put('hello', 'world', function () {
 
 ## API
 
-#### `db = new TinyStore(storage)`
+#### `db = new TinyBox(storage)`
 
 Create a new tiny store. Storage can be any (random-access-storage](https://github.com/random-access-storage) instance.
 For conveinience you can pass a filename as storage as well.

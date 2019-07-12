@@ -1,5 +1,5 @@
 {
-  "name": "tinystore",
+  "name": "tinybox",
   "version": "0.0.0",
   "description": "Tiny, single file, scalable key value store based on HAMTs",
   "main": "index.js",
@@ -19,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hyperdivision/tinystore.git"
+    "url": "https://github.com/hyperdivision/tinybox.git"
   },
   "author": "Mathias Buus (@mafintosh)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hyperdivision/tinystore/issues"
+    "url": "https://github.com/hyperdivision/tinybox/issues"
   },
-  "homepage": "https://github.com/hyperdivision/tinystore"
+  "homepage": "https://github.com/hyperdivision/tinybox"
 }
