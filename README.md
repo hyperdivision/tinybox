@@ -28,7 +28,7 @@ db.put('hello', 'world', function () {
 
 #### `db = new TinyBox(storage)`
 
-Create a new tiny store. Storage can be any (random-access-storage](https://github.com/random-access-storage) instance.
+Create a new tiny store. Storage can be any [random-access-storage](https://github.com/random-access-storage) instance.
 For conveinience you can pass a filename as storage as well.
 
 #### `db.get(key, callback)`
